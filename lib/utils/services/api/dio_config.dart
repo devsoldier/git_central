@@ -42,8 +42,6 @@ extension RequestMethodExtension on RequestMethod {
         return 'TRACE';
       case RequestMethod.get:
         return 'GET';
-      default:
-        return 'GET';
-    }
+      }
   }
 }
