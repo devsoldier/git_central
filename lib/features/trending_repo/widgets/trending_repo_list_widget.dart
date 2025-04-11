@@ -37,25 +37,7 @@ class _TrendingRepoListWidgetState extends State<TrendingRepoListWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<TrendingRepoBloc, TrendingRepoState>(
-      listenWhen: (previous, current) {
-        if (previous.paginateFetchStatus != current.paginateFetchStatus) {
-          return true;
-        }
-        return false;
-      },
-      listener: (context, state) {
-        if (state.paginateFetchStatus is ApiLoading) {
-          setState(() {
-            showLoading = true;
-          });
-        } else {
-          if (showLoading == false) return;
-          setState(() {
-            showLoading = false;
-          });
-        }
-      },
+    return BlocBuilder<TrendingRepoBloc, TrendingRepoState>(
       builder: (context, state) => Stack(
         children: [
           if ((state.repoData?.items ?? []).isNotEmpty) ...[
@@ -82,7 +64,7 @@ class _TrendingRepoListWidgetState extends State<TrendingRepoListWidget> {
                           delay: (index <= 10) ? 200 * index : 200,
                           child: const Divider()),
                       itemCount: (state.repoData?.items ?? []).length +
-                          (showLoading ? 1 : 0),
+                          (state.paginateFetchStatus is ApiLoading ? 1 : 0),
                       itemBuilder: (context, index) {
                         if (index == state.repoData?.items?.length) {
                           return const Center(
