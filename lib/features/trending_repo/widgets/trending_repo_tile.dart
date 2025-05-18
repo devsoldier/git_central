@@ -38,7 +38,7 @@ class TrendingRepoTile extends StatelessWidget {
             ),
             const SizedBox(height: 15),
             Text(
-              '$description',
+              description ?? "",
               overflow: TextOverflow.ellipsis,
             ),
             const SizedBox(height: 10),
@@ -57,9 +57,11 @@ class TrendingRepoTile extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: 10),
-                Text(
-                  '$repoName',
-                  overflow: TextOverflow.ellipsis,
+                Expanded(
+                  child: Text(
+                    '$repoName',
+                    overflow: TextOverflow.ellipsis,
+                  ),
                 ),
               ],
             ),
