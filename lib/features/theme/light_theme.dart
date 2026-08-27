@@ -56,7 +56,7 @@ ThemeData get kAppLightTheme {
       iconColor: kPrimaryColor,
     ),
     floatingActionButtonTheme: buildFloatingActionButtonTheme(),
-    tabBarTheme: const TabBarTheme(
+    tabBarTheme: const TabBarThemeData(
       unselectedLabelColor: kColorDisplayText,
     ),
     tooltipTheme: buildToolTipTheme(),
