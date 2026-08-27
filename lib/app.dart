@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:get_it/get_it.dart';
-import 'package:git_central/features/trending_repo/screens/trending_repo_page.dart';
+import 'package:git_central/features/trending_repo/screens/trending_repo/trending_repo_page.dart';
 import 'package:git_central/utils/custom_widgets/custom_snackbar.dart';
 import 'package:git_central/utils/custom_widgets/global_messenger.dart';
 

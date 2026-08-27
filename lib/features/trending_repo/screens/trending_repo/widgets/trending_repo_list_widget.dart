@@ -4,7 +4,7 @@ import 'package:git_central/features/theme/light_theme.dart';
 import 'package:git_central/features/trending_repo/bloc/trending_repo_bloc.dart';
 import 'package:git_central/features/trending_repo/bloc/trending_repo_event.dart';
 import 'package:git_central/features/trending_repo/bloc/trending_repo_state.dart';
-import 'package:git_central/features/trending_repo/widgets/trending_repo_tile.dart';
+import 'package:git_central/features/trending_repo/screens/trending_repo/widgets/trending_repo_tile.dart';
 import 'package:git_central/utils/custom_widgets/fade_translate_widget.dart';
 import 'package:git_central/utils/custom_widgets/infinite_scrolling.dart';
 import 'package:git_central/utils/custom_widgets/rounded_container.dart';

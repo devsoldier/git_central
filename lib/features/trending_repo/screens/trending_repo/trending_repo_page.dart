@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:git_central/features/trending_repo/bloc/trending_repo_bloc.dart';
 import 'package:git_central/features/trending_repo/bloc/trending_repo_event.dart';
 import 'package:git_central/features/trending_repo/bloc/trending_repo_state.dart';
-import 'package:git_central/features/trending_repo/widgets/trending_repo_list_widget.dart';
+import 'package:git_central/features/trending_repo/screens/trending_repo/widgets/trending_repo_list_widget.dart';
 import 'package:git_central/utils/custom_widgets/custom_loading_indicator.dart';
 import 'package:git_central/utils/custom_widgets/custom_retry.dart';
 import 'package:git_central/utils/custom_widgets/custom_snackbar.dart';
