@@ -206,8 +206,8 @@ buildElevatedButtonTheme() {
   );
 }
 
-buildDiaLogTheme() {
-  return const DialogTheme(
+DialogThemeData buildDiaLogTheme() {
+  return const DialogThemeData(
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.all(
         Radius.circular(15),
